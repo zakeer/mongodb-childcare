@@ -46,6 +46,37 @@ daycare>
     }
   )
 ```
+ - Inserting `[multiple]` inquiries into the collection 
+ ```js
+ db.inquires.insertMany([
+  {
+    "name": "Syed Zakeer",
+    "email": "zakeer@zakeer.me",
+    "phone": "9876543210",
+    "child_name": "Zayaan Hamzah",
+    "child_age": 2,
+    "message": "I want to join my kid into your daycare center"
+  },
+  {
+    "name": "Harsha",
+    "email": "harsha@gmail.com",
+    "phone": "8978675645",
+    "child_name": "Srikar",
+    "child_age": 2.4,
+    "message": ""
+  },
+  {
+    "name": "KotiReddy",
+    "email": "koti@gmail.com",
+    "phone": "7867564544",
+    "child_name": "Jhanvani",
+    "child_age": 1.8,
+    "message": "Nothing"
+  }
+ ])
+ 
+ ```
+   
 2. Reading Data
   - Finding all inquiries in the collection
   ```js
